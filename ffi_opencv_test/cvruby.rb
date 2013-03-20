@@ -2,7 +2,7 @@ require 'ffi'
 
 module Libcv
   extend FFI::Library
-  ffi_lib './libcv.dylib'
+  ffi_lib './libcv.dylib' #如果是mac要吃dylib ,linx要吃.so
   attach_function :main, [], :int
 end
 

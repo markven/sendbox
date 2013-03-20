@@ -3,7 +3,7 @@ require 'ffi'
 
 module MyLib
   extend FFI::Library
-  ffi_lib './libmylib.dylib'
+  ffi_lib './libmylib.dylib' #如果是mac要吃dylib ,linx要吃.so
   attach_function :plus, [:int ,:int], :int
 end
 
