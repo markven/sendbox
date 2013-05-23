@@ -1,13 +1,14 @@
 =begin
-這是得到GetStreetView(panoid_i,zoom)
+這是得到GetStreetView(panoid_i,zoom,dest)
 獨立出來的fuction
+ 存到目的資料夾dest
 
 =end	
 
 require 'RMagick'
 include Magick
 
-def GetStreetView(panoid_i,zoom)
+def GetStreetView(panoid_i,zoom,dest)
 
 	basew = 512
 	baseh = 512
@@ -30,6 +31,6 @@ def GetStreetView(panoid_i,zoom)
 		end
 	end
 
-	mosaic_pana.write("pana_"+zoom.to_s+"_"+panoid_i+".jpg")
+	mosaic_pana.write("./"+dest+"/pana_"+zoom.to_s+"_"+panoid_i+".jpg")
 
 end

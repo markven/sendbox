@@ -27,7 +27,7 @@ pana_id = ["rZFa29KMox1vA6FtkenRKA","4fe6hEN9GJC6thoQBcgv0Q","ex6piqtBNF4JVkkH4G
 #end
 
 pana_id.each do |i|
-    GetStreetView(i,1)
+    GetStreetView(i,2,"image")
 end
 
 =begin
