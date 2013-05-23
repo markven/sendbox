@@ -1,3 +1,12 @@
+=begin
+這是得到GetStreetView(panoid_i,zoom)
+獨立出來的fuction
+
+=end	
+rescue Exception => e
+	
+end
+
 require 'RMagick'
 include Magick
 
