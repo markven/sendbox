@@ -3,9 +3,6 @@
 獨立出來的fuction
 
 =end	
-rescue Exception => e
-	
-end
 
 require 'RMagick'
 include Magick
