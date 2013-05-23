@@ -20,8 +20,14 @@ open('map_sv2.jpg', 'wb') do |f|
     f.close()
 end
 
-for i in 1 .. 2
-	GetStreetView("4fe6hEN9GJC6thoQBcgv0Q",i)
+pana_id = ["rZFa29KMox1vA6FtkenRKA","4fe6hEN9GJC6thoQBcgv0Q","ex6piqtBNF4JVkkH4GZEmw"]
+
+#for i in 1 .. 2
+#	GetStreetView("rZFa29KMox1vA6FtkenRKA",i)
+#end
+
+pana_id.each do |i|
+    GetStreetView(i,1)
 end
 
 =begin
